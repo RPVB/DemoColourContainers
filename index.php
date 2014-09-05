@@ -5,7 +5,7 @@
 		<link rel='stylesheet' href='./assets/css/style.css' />
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="./assets/js/jquery.js"></script>
-		<title>Finesse Wordplay</title>
+		<title>Coloured Containers</title>
 	</head>
 	<body>
 	</body>
