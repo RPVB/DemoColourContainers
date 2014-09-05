@@ -10,19 +10,21 @@ Copyright Rowan Gorilla VI
 	padding: 0;
 }
 
-.border{
-	border: 1px solid #000;
-}
-
 /* Main Container
 -------------------------------------------------- */
 
-.main-container{
+#main-container{
 	margin: 0 auto;
-	width: 300px;
+	width: 350px;
 }
 
 .container{
+	float: left;
 	width: 50px;
 	height: 50px;
+	border: 1px solid #000;
+}
+
+.red{
+	background-color: #F00;
 }

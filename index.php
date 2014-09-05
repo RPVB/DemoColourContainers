@@ -8,9 +8,7 @@
 		<title>Coloured Containers</title>
 	</head>
 	<body>
-		<div class="main-container border">
-			<div class="container border">
-			</div>
+		<div id="main-container">
 		</div>
 	</body>
 </head>
