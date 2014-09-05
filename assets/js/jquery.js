@@ -4,7 +4,22 @@ $( document ).ready(function() {
 	};
 
 	$(".container").click(function() {
-		console.log("test");
-		$(this).addClass("red");
+          hmpps = $(this).touching();
+		random = Math.round(Math.random()* 10); 
+                if(random < 3 ){
+                    $.each(hmpps, function(key,valueObj){
+                       console.log(key.valueOf("red"));
+                    });
+                    $(this).removeClass('green').removeClass('red').removeClass('blue');
+                    $(this).addClass("red");
+                }
+                if(random > 3 && random < 6 ){
+                    $(this).removeClass('green').removeClass('red').removeClass('blue');
+                    $(this).addClass("green");
+                }
+                if(random > 6 ){
+                    $(this).removeClass('green').removeClass('red').removeClass('blue');
+                    $(this).addClass("blue");
+                }
 	});
 });
