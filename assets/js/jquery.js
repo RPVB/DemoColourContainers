@@ -8,7 +8,7 @@ $( document ).ready(function() {
 		random = Math.round(Math.random()* 10); 
                 if(random < 3 ){
                     $.each(hmpps, function(key,valueObj){
-                       console.log(key.valueOf("red"));
+                       console.log(valueObj.getAttribute('id'));
                     });
                     $(this).removeClass('green').removeClass('red').removeClass('blue');
                     $(this).addClass("red");
