@@ -1,11 +1,11 @@
 $(document).ready(function() {
     for (var i = 0; i < 36; i++) {
         $("#main-container").append("<div id='container" + i + "' class='container'>" + i + "</div>");
-    }
-    ;
+    };
 
     $(".container").click(function() {
 
+    var currentContainer = ($(this));
         random = Math.round(Math.random() * 10);
         if (random < 3) {
             $(this).removeClass('green').removeClass('red').removeClass('blue');
@@ -20,15 +20,14 @@ $(document).ready(function() {
             $(this).addClass("blue");
         }
         hmpps = $(this).touching();
-        console.log(hmpps);
 
         $.each(hmpps, function(key, valueObj) {
             var bordering = $(document.getElementById(valueObj.getAttribute('id')));
-            if ($(this).attr('id') != bordering.attr('id')) {
-                if ($(this).hasClass("red") && bordering.hasClass("red")) {
-                    console.log('kaboem klengreblankbam boem');
+            console.log(currentContainer.hasClass("red"));
+                if (currentContainer.hasClass("red") && bordering.hasClass("red")) {
+                    alert('container te dicht bij een container geplaatst die volgens voorschrift niet in de buurt mogen staan.\n\
+                     kan een gevaarlijk chemische reactie kan veroorzaken.');
                 }
-            }
         });
 
     });
