@@ -25,8 +25,8 @@ $(document).ready(function() {
             var bordering = $(document.getElementById(valueObj.getAttribute('id')));
             console.log(currentContainer.hasClass("red"));
                 if (currentContainer.hasClass("red") && bordering.hasClass("red")) {
-                    alert('container te dicht bij een container geplaatst die volgens voorschrift niet in de buurt mogen staan.\n\
-                     kan een gevaarlijk chemische reactie kan veroorzaken.');
+                    alert('Container te dicht bij een container geplaatst, die volgens voorschrift niet in de buurt mogen staan.\n\
+                     Kan een gevaarlijk chemische reactie veroorzaken.');
                 }
         });
 
